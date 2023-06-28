@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-
+# This script is displaying "Best School" 10 times
 m=0
 
-while [ $m -lt 10 ]
+while ((m < 10))
 do
 	echo "Best School"
-	(( m++ ))
+	((m++))
 done
