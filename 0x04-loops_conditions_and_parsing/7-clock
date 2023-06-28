@@ -7,10 +7,10 @@ mins=1
 while [ $hrs -le 12 ]
 do
 	echo "Hour: $hrs"
-	((hrs++))
 	while [ $mins -le 60 ]
 	do
 		echo "$mins"
 		((mins++))
 	done
+	((hrs++))
 done
