@@ -4,7 +4,6 @@ m=0
 
 while ((m < 10))
 do
-	echo "Best School"
 	((m++))
 	if [ $m -eq 4 ]
 	then
@@ -12,5 +11,7 @@ do
 	elif [ $m -eq 8 ]
 	then
 		echo "good luck"
+	else
+		echo "Best School"
 	fi
 done
