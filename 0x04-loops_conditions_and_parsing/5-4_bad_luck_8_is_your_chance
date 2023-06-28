@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School"
+m=0
+
+while ((m < 10))
+do
+	echo "Best School"
+	((m++))
+	if [ $m -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $m -eq 8 ]
+	then
+		echo "good luck"
+	fi
+done
