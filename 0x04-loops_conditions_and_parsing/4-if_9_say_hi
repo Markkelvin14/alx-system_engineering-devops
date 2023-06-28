@@ -1,5 +1,5 @@
 #!/bin/env bash
-
+# This script is displaying "Best School" 10 times but prints Hi at 9
 m=0
 
 while ((m < 10))
