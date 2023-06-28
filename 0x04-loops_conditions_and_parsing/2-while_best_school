@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+while ((m < 10))
+do
+	"Best School"
+	((m++))
+done
