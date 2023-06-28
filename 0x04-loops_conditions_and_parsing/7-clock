@@ -2,13 +2,12 @@
 #nested loops
 
 hrs=0
-mins=1
 
 while [ $hrs -le 12 ]
 do
 	echo "Hour: $hrs"
 	mins=1
-	while [ $mins -le 60 ]
+	while [ $mins -le 59 ]
 	do
 		echo "$mins"
 		((mins++))
