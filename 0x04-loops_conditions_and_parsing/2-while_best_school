@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+m=0
 while ((m < 10))
 do
-	"Best School"
+	echo "Best School"
 	((m++))
 done
