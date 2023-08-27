@@ -1,0 +1,4 @@
+# configure ssh client to use private key ~/.ssh/holberton and to refuse to authenticate
+Host *
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/school
