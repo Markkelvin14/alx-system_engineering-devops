@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-'''
-    this module contains the function get_info
-'''
+'''this module contains the function get_info'''
 import requests as req
 from sys import argv
 
@@ -10,9 +8,9 @@ def get_infomation(employee_id):
     '''returns information for a given employee Id'''
     user_id = argv[1]
     user = req.get('https://jsonplaceholder.typicode.com/users/{}'
-                        .format(user_id)).json()
+                   .format(user_id)).json()
     todo = req.get('https://jsonplaceholder.typicode.com/todos?userId={}'
-                        .format(user_id)).json()
+                   .format(user_id)).json()
     name = user.get('name')
     done_tasks = []
     done_count = 0
