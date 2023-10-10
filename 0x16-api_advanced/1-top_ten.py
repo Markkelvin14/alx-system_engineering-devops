@@ -9,7 +9,7 @@ def top_ten(subreddit):
     user = {"User-Agent": "Marklevin"}
     params = {"limit": 10}
     response = requests.get(url, headers=user, params=params,
-                           allow_redirects=False).json()
+                            allow_redirects=False).json()
     try:
         for res in response.get('data').get('children'):
             print(res.get('data').get('title'))
