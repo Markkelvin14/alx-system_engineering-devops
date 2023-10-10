@@ -9,7 +9,6 @@ def recurse(subreddit, hot_list=[], after="", count=0):
     user = {"User-Agent": "Markkelvin"}
     params = {
         "after": after,
-        "count": count,
         "limit": 100
     }
     response = requests.get(url, headers=user, params=params,
@@ -17,7 +16,6 @@ def recurse(subreddit, hot_list=[], after="", count=0):
 
     results = response.get('data')
     after = results.get('after')
-    count += results.get('dist')
     try:
         for res in results.get('children'):
             hot_list.append(res.get('data').get('title'))
@@ -25,5 +23,5 @@ def recurse(subreddit, hot_list=[], after="", count=0):
         return None
 
     if after is not None:
-        return recurse(subreddit, hot_list, after, count)
+        return recurse(subreddit, hot_list, after)
     return hot_list
