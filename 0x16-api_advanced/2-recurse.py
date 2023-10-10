@@ -8,10 +8,10 @@ def recurse(subreddit, hot_list=[], after="", count=0):
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     user = {"User-Agent": "Markkelvin"}
     params = {
-            "after": after,
-            "count": count,
-            "limit": 100
-            }
+        "after": after,
+        "count": count,
+        "limit": 100
+    }
     response = requests.get(url, headers=user, params=params,
                             allow_redirects=False).json()
 
